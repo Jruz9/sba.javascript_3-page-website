@@ -30,7 +30,7 @@ signUpPage
 </body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top  bg-dark">
-      <a class="navbar-brand" href="/img/platonic-icosahedron.gif">Coffee Warriors</a>
+      <a class="navbar-brand" href="index.html">Coffee Warriors</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,21 +80,21 @@ signUpPage
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Black</td>
-                        <td>Strong, realiable, and somewhat dull. Don't feel bad</td>
+                        <td>Black knight</td>
+                        <td>?</td>
                     </tr>
 
                     <tr>
-                        <td>Expresso</td>
-                        <td>Energic, Creative and just pure crazy, you need to slow down</td>
+                        <td>Expresso knight</td>
+                        <td>?</td>
                     </tr>
                     <tr>
-                      <td>Latte</td>
-                      <td>The most popular but also the most unreconizable umm yeah</td>
+                      <td>Latte knight</td>
+                      <td>?</td>
                   </tr>
                   <tr>
-                    <td>Affogato</td>
-                    <td>Your are what we call the fancy but in a good way kinda lolol.</td>
+                    <td>Affogato knight</td>
+                    <td>?</td>
                 </tr>
                 </tbody>
             </table>
@@ -102,37 +102,65 @@ signUpPage
     </div>
 </div>
 
-  <h2>Click the button to be assigned </h2>
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-7">
+        <h2 class="text-center">The time has come for you to know true coffee knight</h2>
+        
+        <div class="text-center">
+          <br>
+          <button id="Join">Join</button>
+          
+        <p class="text-center" id="answer">Are you not entertained</p>       
+      </div>            
+  </div>
+  </div>
+  </div>
+
+
+  <!-- <h2>Click the button to be assigned </h2>
   <button id="Join">Join</button>
-  <p id="answer">Are you not entertained</p>
+  <p id="answer">Are you not entertained</p> -->
 
 <script>
   document.getElementById("Join").addEventListener("click",randomButton);
 
   function randomButton(){
      var x = Math.floor((Math.random() * 5) + 1);
+     var cheater=false;
+     if(cheater!=true)
+     {
     if(x==1){
-      return document.getElementById("answer").innerHTML="this";
+      cheater=true;
+      return document.getElementById("answer").innerHTML='<a href="black.html">Black Knight</a>';
     }
     else if(x==2){
-      return  document.getElementById("answer").innerHTML="entertainment";
+      cheater=true;
+      return  document.getElementById("answer").innerHTML='<a href="expresso.html">Expresso Knight</a>';
     }
     else if(x==3){
-      return  document.getElementById("answer").innerHTML="Here ";
+      cheater=true;
+      return  document.getElementById("answer").innerHTML='<a href="latte.html">Latte Kight</a>';
     }
     else if(x==4){
-      return document.getElementById("answer").innerHTML="Here that's your entertainment";
+      cheater=true;
+      return document.getElementById("answer").innerHTML='<a href="Affogato.html">Affogato Knight</a>';
     }
     else
     {
-      return  document.getElementById("answer").innerHTML=" your";
+      cheater=true;
+      return  document.getElementById("answer").innerHTML=" You are not ready my young one, continue training.";
     }
-    
+  }
+  else{
+    alert('Accept it, this is your destiny my knight')
+  }
     
 }
 function randomizer(){
  
   randomButton(x)
 }
+
 </script> 
 </html>
