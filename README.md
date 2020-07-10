@@ -1,6 +1,7 @@
 # AD - SBA - HTML/CSS/JavaScript
-
-## WebSite
+## My Github Respositories 
+>https://github.com/Jruz9?tab=repositories
+## WebSite Overview
 This is a website called coffee warriors. The website is about helping people know more about the different types of coffees why gameifying the experience. We call users knights and lead them toward choosing a clan to help start them on their journey to learning about coffee. 
 
 
