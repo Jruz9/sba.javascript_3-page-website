@@ -23,6 +23,8 @@ signUpPage
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
   crossorigin="anonymous"></script>
+  
+  <link href="./css/style.css" rel="stylesheet">
 </head> 
 
 <body>
@@ -85,7 +87,7 @@ signUpPage
                     </tr>
 
                     <tr>
-                        <td>Expresso knight</td>
+                        <td>Espresso knight</td>
                         <td>?</td>
                     </tr>
                     <tr>
@@ -105,18 +107,31 @@ signUpPage
 <div class="container">
   <div class="row justify-content-center">
       <div class="col-md-7">
-        <h2 class="text-center">The time has come for you to know true coffee knight</h2>
+        <h2 class="text-center">The time has come for you to know your true coffee knight</h2>
         
         <div class="text-center">
           <br>
           <button id="Join">Join</button>
           
-        <p class="text-center" id="answer">Are you not entertained</p>       
+        <p class="text-center" id="answer">!!!Are You ready!!!</p>       
       </div>            
   </div>
   </div>
   </div>
-
+  <div class="container">
+    <div class="row justify-content-center">
+  <div class="signup">
+    <h2 class="">Continue your journey by sign up for updates </h2>
+    <form>
+      <div class="col-md-4">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp " placeholder="Enter email" >
+        <small id="emailHelp" class="form-text text-muted">Become Enlighten!</small>
+        <button type="submit" formaction="signUpPage.html" class="btn btn-primary mb-2">Submit</button>
+      </div>
+    </div>
+  </div>
 
   <!-- <h2>Click the button to be assigned </h2>
   <button id="Join">Join</button>
@@ -136,7 +151,7 @@ signUpPage
     }
     else if(x==2){
       cheater=true;
-      return  document.getElementById("answer").innerHTML='<a href="expresso.html">Expresso Knight</a>';
+      return  document.getElementById("answer").innerHTML='<a href="expresso.html">Espresso Knight</a>';
     }
     else if(x==3){
       cheater=true;
